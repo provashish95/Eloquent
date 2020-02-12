@@ -17,3 +17,7 @@ Route::get('/', function () {
 Route::get('/users','PhoneController@index')->name('users');
 Route::get('/posts','PostController@index')->name('posts');
 Route::get('/post','PostController@post')->name('post');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
